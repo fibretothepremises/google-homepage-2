@@ -44,17 +44,53 @@ www.domain.com/favicon.ico
         <link rel="icon" type="image/svg+xml" href="https://www.google.com/favicon.ico">
     </head>
     <body>
-        <div id="divTopnav">
-            <div id="divTopnavLeft">
+        <nav class="nav-top">
+            <ul class="left nav-ul">
                 <a href="#">About</a>
                 <a href="#">Store</a>
-            </div>
-            <div id="divTopnavRight">
+            </ul>
+            <ul class="right nav-ul">
                 <a href="#">Gmail</a>
                 <a href="#">Images</a>
-                <button><i class="material-icons">apps</i></button>
-                <button class="round-button"><img src="https://lh3.googleusercontent.com/ogw/ADGmqu9xu9h053iL8UiGskZLIa7dAqiL45Nt4tOO31RB=s32-c-mo"></button>
-            </div>
-        </div>
+                <button class="topnav-btn"><i class="material-icons">apps</i></button>
+                <button class="topnav-btn round-button"><img src="https://lh3.googleusercontent.com/ogw/ADGmqu9xu9h053iL8UiGskZLIa7dAqiL45Nt4tOO31RB=s32-c-mo"></button>
+            </ul>
+        </nav>
+        <header class="row">
+            <img class="logo row" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+            <form class="search-form row">
+                <fieldset class="row">
+                    <div class="searchbar row">
+                        <i class="material-icons">search</i><!-- 
+
+                        --><input class="search-input" type="search" name="search"><!-- 
+
+                        --><i class="material-icons">mic</i>
+                    </div>
+                    <div class="search-button-group row">
+                        <button class="submit-button" name="google-search">Google Search</button>
+                    <button class="submit-button" name="feeling-lucky">I'm Feeling Lucky</button>
+                    </div>
+                    
+                </fieldset>
+            </form>
+        </header>
+        <footer class="row">
+            <nav class="f-top-row">
+                <a href="#">Australia</a>
+            </nav>
+            <nav class="f-bottom-row">
+                <ul class="f-bottom-1">
+                    <a href="#">Advertising</a>
+                    <a href="#">Business</a>
+                    <a href="#">How Search Works</a>
+                </ul>
+                <ul class="f-bottom-2">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Settings</a>
+                </ul>
+            </nav>
+        </footer>
     </body>
 </html>
