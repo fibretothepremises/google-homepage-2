@@ -48,6 +48,10 @@ footer {
     color: rgba(107, 107, 107, 0.829);
 }
 
+.search-input {
+    font-size: 15px;
+}
+
 /*********************************/
 
 /* LINKS AND BUTTONS */
@@ -143,6 +147,7 @@ a:hover {
 header {
     padding-top: 150px;
     transition: padding-top 1s;
+    padding-bottom: 40px;
 }
 
 .logo {
@@ -171,8 +176,6 @@ header {
     }
 }
 
-
-
 /*********************************/
 
 /* searchbar */
@@ -189,9 +192,19 @@ header {
     display: flex;
 }
 
+.searchbar:hover,
+.submit-button:hover {
+    box-shadow: 1px 0 2px rgba(128, 128, 128, 0.226), -1px 0 2px rgba(128, 128, 128, 0.226), 0 1px 2px rgba(128, 128, 128, 0.205), 0 -1px 2px rgba(128, 128, 128, 0.226);
+    opacity: 1;
+}
+
 .searchbar .material-icons {
     height: 44px;
     line-height: 44px;
+}
+
+.searchbar .material-icons:hover {
+    cursor: none;
 }
 
 .searchbar :first-child {
@@ -209,12 +222,18 @@ header {
 .search-input {
     display: inline-block;
     width: 100%;
-    height: 38px;
+    height: 42px;
+    line-height: 44px;
     margin-top: 0px;
+    padding-left: 14px;
 
     border: 0;
     position: relative;
     z-index: 1;
+}
+
+.search-input:focus {
+    outline: none;
 }
 
 
@@ -293,3 +312,9 @@ footer {
     }
 }
 
+
+@media only screen and (max-height: 425px) {
+    footer {
+        position: static;
+    }
+}
