@@ -203,7 +203,7 @@ header {
 }
 
 .searchbar .material-icons:hover {
-    cursor: none;
+    cursor: default;
 }
 
 .searchbar :first-child {
